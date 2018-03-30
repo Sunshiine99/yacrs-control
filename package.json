@@ -1,0 +1,26 @@
+{
+  "name": "yacrs-control",
+  "productName": "YACRS Control",
+  "version": "2.0.0-rc1",
+  "description": "A cross-platform desktop wrapper for the University of Glasgow's 'Yet Another Class Response System' (YACRS)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build -mwl --x64 --ia32",
+    "dist-linux": "build -l --x64 --ia32",
+    "dist-windows": "build -w --x64 --ia32"
+  },
+  "author": "Nora Albagdadi, Chase Condon, Hristo Ivanov, Michael McGinnley, and David Southgate",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "electron": "^1.8.2",
+    "electron-builder": "^20.0.7",
+    "electron-packager": "^11.0.1",
+    "electron-prebuilt-compile": "^1.8.2"
+  },
+  "build": {
+    "appId": "yacrs-control"
+  }
+}
